@@ -1,0 +1,13 @@
+{
+  "name": "mushfiqur-os",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @mushfiqur-os/backend & npm run dev -w @mushfiqur-os/frontend & wait",
+    "start": "npm run start -w @mushfiqur-os/backend & npm run start -w @mushfiqur-os/frontend & wait"
+  }
+}
